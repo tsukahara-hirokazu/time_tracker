@@ -9,7 +9,7 @@ class CutomRaisedButton extends StatelessWidget {
   CutomRaisedButton({
     this.child,
     this.color,
-    this.borderRadius,
+    this.borderRadius: 2.0,
     this.onPressed,
   });
 

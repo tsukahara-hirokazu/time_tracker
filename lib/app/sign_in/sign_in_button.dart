@@ -3,7 +3,7 @@ import 'package:time_tracker/common_widget/custom_raised_button.dart';
 
 class SignInButton extends CutomRaisedButton {
   SignInButton({
-    String text,
+    @required String text,
     Color color,
     Color textColor,
     VoidCallback onPressed,

@@ -5,8 +5,12 @@ import 'package:time_tracker/app/sign_in/socail_sign_in_button.dart';
 
 class SignInPage extends StatelessWidget {
   Future<void> _signInAnonimously() async {
-    final authResult = await FirebaseAuth.instance.signInAnonymously();
-    print("${authResult.user.uid}");
+    try {
+      final authResult = await FirebaseAuth.instance.signInAnonymously();
+      print("${authResult.user.uid}");
+    } catch (e) {
+      print(e.toString());
+    }
   }
 
   @override
